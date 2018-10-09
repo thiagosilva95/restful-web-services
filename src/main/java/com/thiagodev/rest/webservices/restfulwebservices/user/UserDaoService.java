@@ -25,4 +25,12 @@ public class UserDaoService {
 		users.add(user);
 		return user;
 	}
+
+	public User findOne(int id) {
+		return users.get(id);
+	}
+
+	public List<User> findAll() {
+		return users;
+	}
 }
